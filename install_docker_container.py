@@ -18,8 +18,8 @@ def spin_containers(ip_address, username, password):
         'password': password,
     }
     net_connect = ConnectHandler(**vm)
-    output = net_connect.send_command('sudo docker run -d --name container1 <image_name>')
+    output = net_connect.send_command('sudo docker run -d --name container1 FRRouting/frr')
     print(output)
-    output = net_connect.send_command('sudo docker run -d --name container2 <image_name>')
+    output = net_connect.send_command('sudo docker run -d --name container2 osrg/ryu:latest')
     print(output)
     net_connect.disconnect()
