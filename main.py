@@ -7,7 +7,7 @@ from configure_bgp import configure_bgp_frr, configure_bgp_ryu
 auth = {
     'auth_url': "http://10.0.0.198/identity",
     'project_name': "NVO_lab9",
-    'username': "praathz",
+    'username': "prathz",
     'password': "prathz",
     'user_domain_name': "default",
     'project_domain_name': "default"
@@ -31,8 +31,8 @@ def main():
     assign_floating_ip(conn, vm3)
 
     # SSH credentials
-    ssh_username = "username"
-    ssh_password = "password"
+    ssh_username = "prathz"
+    ssh_password = "prathz"
 
     # Install Docker on VM1
     install_docker(vm1.addresses['public'][0]['addr'], ssh_username, ssh_password)
